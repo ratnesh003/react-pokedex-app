@@ -66,6 +66,7 @@
 @layer base {
   * {
     @apply border-border font-sans;
+    scrollbar-width: none;
   }
   body {
     @apply bg-background text-foreground font-sans;

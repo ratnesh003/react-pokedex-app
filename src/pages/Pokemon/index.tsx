@@ -1,6 +1,11 @@
+import { Outlet } from "react-router-dom"
+
 const Pokemon = () => {
   return (
-    <div>Pokemon</div>
+    <div>
+      Pokemon
+      <Outlet />
+    </div>
   )
 }
 

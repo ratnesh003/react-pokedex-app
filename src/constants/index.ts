@@ -1,5 +1,29 @@
+import { BookA, House, PawPrint, SprayCan } from "lucide-react";
 
-const API_BASE_URL = "https://pokeapi.co/api/v2/";
+
+const navPages = [
+    {
+        title: 'Home',
+        link: '/',
+        icon: House
+    },
+    {
+        title: 'Pokémons',
+        link: '/pokemon',
+        icon: PawPrint
+    },
+    {
+        title: 'Item',
+        link: '/item',
+        icon: SprayCan
+    },
+    {
+        title: 'About',
+        link: '/about',
+        icon: BookA
+    },
+
+]
 
 const maxPokemon = 1025;
 const limit = 25;
@@ -27,7 +51,7 @@ const typeColors = {
 };
 
 export {
-    API_BASE_URL,
+    navPages,
     maxPokemon, 
     limit, 
     typeColors
