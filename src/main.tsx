@@ -5,7 +5,13 @@ import './index.css';
 import { ThemeProvider } from '@/context/theme-provider.tsx';
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: Infinity,
+    },
+  },
+});
 
 createRoot(document.getElementById('root')!).render(  
   <StrictMode>

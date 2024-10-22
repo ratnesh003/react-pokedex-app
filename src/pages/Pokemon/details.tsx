@@ -4,10 +4,13 @@ import { useParams } from 'react-router-dom';
 const PokemonDetails = () => {
   let { pokemon } = useParams();
 
-    useEffect(() => {
-    },[])
+  useEffect(() => {}, []);
 
-    return <div>PokemonDetails : {pokemon}</div>;
+  return (
+    <div className='w-full h-[calc(100vh-64px)] block'>
+      PokemonDetails : {pokemon}
+    </div>
+  );
 };
 
 export default PokemonDetails;

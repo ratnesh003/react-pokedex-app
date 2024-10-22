@@ -28,7 +28,7 @@ const navPages = [
 const maxPokemon = 1025;
 const limit = 25;
 
-const typeColors = {
+const typeColors:{ [key: string]: string } = {
     'normal': '#BCBCAC',
     'fighting': '#BC5442',
     'flying': '#669AFF',

@@ -18,7 +18,7 @@ export function MobileNav() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost">
+        <Button variant="ghost" aria-description='menu on mobile view'>
           <Menu />
         </Button>
       </SheetTrigger>
@@ -26,9 +26,9 @@ export function MobileNav() {
         <SheetHeader>
           <SheetTitle className='flex items-center justify-center gap-1 h-12'>
             <img src={pokeball} alt="icon" className="h-7 invert dark:invert-0" />
-            <h1 className="sm:hidden text-2xl leading-7 font-bold md:block">
+            <p className="sm:hidden text-2xl leading-7 font-bold md:block">
               Poké<span className="text-primary">dex</span>
-            </h1>{' '}
+            </p>{' '}
           </SheetTitle>
           <SheetDescription>Explore Pokémon and Items here !</SheetDescription>
         </SheetHeader>

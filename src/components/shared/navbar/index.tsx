@@ -7,7 +7,7 @@ import { MobileNav } from './mobile-nav';
 
 const Navbar = () => {
   return (
-    <nav className="sticky left-0 top-0 h-16 w-full backdrop-blur-sm bg-white/4 dark:bg-black/5 flex items-center justify-between p-4">
+    <nav className="sticky z-10 left-0 top-0 h-16 w-full backdrop-blur-sm bg-white/4 dark:bg-black/5 flex items-center justify-between p-4">
       <div className="flex items-center justify-center gap-12">
         <NavLink className="flex items-start justify-between gap-2" to={'/'}>
           <img src={pokeball} alt="icon" className="invert dark:invert-0" height={28} width={28}/>
